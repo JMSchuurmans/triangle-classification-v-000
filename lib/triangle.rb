@@ -23,12 +23,10 @@ class Triangle
     [side_a, side_b, side_c].each {|side| valid_triangle << false if side <= 0}
     raise TriangleError if valid_triangle.include?(false)
   end
-    
+
 
 
   class TriangleError < StandardError
-    def message
-      "A triangle with no size is not a triangle."
-    end
   end
+  
 end
