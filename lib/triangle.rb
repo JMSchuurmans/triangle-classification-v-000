@@ -10,11 +10,11 @@ class Triangle
 
   def kind
     if side_a == side_b && side_b == side_c
-      return :equilateral
+      :equilateral
     elsif side_a == side_b || side_a == side_c || side_b == side_c
-      return :isosceles
+      :isosceles
     else
-      return :scalene
+      :scalene
     end
   end
 
@@ -27,5 +27,5 @@ class Triangle
 
   class TriangleError < StandardError
   end
-  
+
 end
